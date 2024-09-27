@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TangoAttack")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9ab25ec65fe525bd97450075ffc775bc6d0b0fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3a8cb3ebf02849dd2b68a3071a47f69049490b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("TangoAttack")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TangoAttack")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
