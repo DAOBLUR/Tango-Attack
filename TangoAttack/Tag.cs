@@ -28,12 +28,12 @@
                 throw new Exception("Error en la autenticación: D no coincide.");
             }
 
-            Console.WriteLine("Autenticación del lector exitosa.");
+            //Console.WriteLine("Autenticación del lector exitosa.");
 
             int E = (K1 ^ n1 ^ ID) ^ (K2 & n2);
             int F = (K1 & n1) ^ (K2 & n2);
             
-            Console.WriteLine($"Etiqueta generó E: {Convert.ToString(E, 2)}, F: {Convert.ToString(F, 2)}");
+            //Console.WriteLine($"Etiqueta generó E: {Convert.ToString(E, 2)}, F: {Convert.ToString(F, 2)}");
             return (E, F);
         }
 
@@ -42,7 +42,7 @@
         {
             PID = PID2;
             PID2 = PID2 ^ n1 ^ n2;
-            Console.WriteLine($"Nuevos pseudónimos en la etiqueta: PID = {Convert.ToString(PID, 2)}, PID2 = {Convert.ToString(PID2, 2)}");
+            //Console.WriteLine($"Nuevos pseudónimos en la etiqueta: PID = {Convert.ToString(PID, 2)}, PID2 = {Convert.ToString(PID2, 2)}");
         }
     }
 }

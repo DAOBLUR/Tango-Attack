@@ -15,12 +15,12 @@
             if (server.AuthorizeReader())
             {
                 Certificate = 1; // Certificado válido
-                Console.WriteLine("Certificado de autorización recibido.");
+                //Console.WriteLine("Certificado de autorización recibido.");
                 return true;
             }
             else
             {
-                Console.WriteLine("Solicitud de certificado fallida.");
+                //Console.WriteLine("Solicitud de certificado fallida.");
                 return false;
             }
         }
@@ -31,8 +31,8 @@
             int A = (PID2 & K1 & K2) ^ n1;
             int B = (PID2 & K2 & K1) ^ n2;
             int D = (K1 & n2) ^ (K2 & n1);
-
-            Console.WriteLine($"Lector generó A: {Convert.ToString(A, 2)}, B: {Convert.ToString(B, 2)}, D: {Convert.ToString(D, 2)}");
+            
+            //Console.WriteLine($"Lector generó A: {Convert.ToString(A, 2)}, B: {Convert.ToString(B, 2)}, D: {Convert.ToString(D, 2)}");
             return (A, B, D);
         }
 
@@ -46,11 +46,11 @@
                 throw new Exception("Error en la autenticación del tag: F no coincide.");
             }
 
-            Console.WriteLine("Autenticación del tag exitosa.");
+            //Console.WriteLine("Autenticación del tag exitosa.");
 
             // Recuperar ID
             int ID = E ^ (K2 & n2) ^ K1 ^ n1;
-            Console.WriteLine($"ID del tag recuperado: {Convert.ToString(ID, 2)}");
+            //Console.WriteLine($"ID del tag recuperado: {Convert.ToString(ID, 2)}");
             return ID;
         }
     }
